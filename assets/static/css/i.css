@@ -186,6 +186,10 @@ h1, h3, h5 {
     width: 100%;
 }
 
+.content-wrapper .container {
+    backdrop-filter: blur(8px);
+}
+
 
 .row {
     display: -webkit-box;
@@ -1237,6 +1241,7 @@ a {
     left: 0;
     z-index: 4;
     background-color: #FFF;
+    backdrop-filter: blur(8px);
     padding: .5rem 1.5rem;
     -webkit-box-shadow: 0 6px 0 0 rgb(0 0 0 / 1%), 0 15px 32px 0 #ea6af50f;
     box-shadow: 0 6px 0 0 rgb(0 0 0 / 1%), 0 15px 32px 0 #ea6af50f;
