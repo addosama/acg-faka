@@ -7179,7 +7179,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-    color: #009EF7;
+    color: rgb(40,40,40);
 }
 
 .link-primary:hover, .link-primary:focus {
@@ -39206,9 +39206,9 @@ a:hover {
 }
 
 .btn.btn-light-primary {
-    color: #009EF7;
-    border-color: #F1FAFF;
-    background-color: #F1FAFF;
+    color: #ffffff;
+    border-color: #000000;
+    background-color: #000000;
 }
 
 .btn.btn-light-primary i {
