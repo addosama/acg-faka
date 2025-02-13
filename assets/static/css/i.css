@@ -186,11 +186,6 @@ h1, h3, h5 {
     width: 100%;
 }
 
-.content-wrapper .container {
-    backdrop-filter: blur(8px);
-}
-
-
 .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -204,12 +199,21 @@ h1, h3, h5 {
     margin-left: -15px
 }
 
+.col-md-7 {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+}
+
 .col, .col-3, .col-md-2, .col-md-5, .col-md-7 {
     position: relative;
     width: 100%;
     min-height: 1px;
+    /*
     padding-right: 15px;
     padding-left: 15px
+    */
+    padding: 20px;
 }
 
 .col {
@@ -773,6 +777,7 @@ select.form-control:focus::-ms-value {
     -moz-box-orient: vertical;
     -webkit-box-direction: normal;
     -moz-box-direction: normal;
+    backdrop-filter: blur(8px);
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -796,7 +801,6 @@ select.form-control:focus::-ms-value {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #FFF;
     -webkit-background-clip: border-box;
     background-clip: border-box
 }
@@ -812,7 +816,7 @@ select.form-control:focus::-ms-value {
 
 .card-header {
     padding: .75rem 1.25rem;
-    background-color: rgba(0, 0, 0, .03)
+    /*background-color: rgba(0, 0, 0, .03)*/
 }
 
 .card-title {
@@ -825,7 +829,7 @@ select.form-control:focus::-ms-value {
 }
 
 .card-header {
-    border-bottom: 1px solid rgba(0, 0, 0, .125)
+    /*border-bottom: 1px solid rgba(0, 0, 0, .125)*/
 }
 
 .card-header:first-child {
@@ -995,7 +999,7 @@ body {
     font-family: 'Open+Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-weight: 300;
     line-height: 1.5em;
-    color: rgba(97, 97, 97, .87);
+    color: rgba(25,25,25,0.8);
     min-height: 100vh
 }
 
@@ -1055,8 +1059,10 @@ p {
 .card {
     border: 0;
     margin: 15px 0;
+    /*
     -webkit-box-shadow: 0 6px 0 0 rgb(0 0 0 / 1%), 0 15px 32px 0 #eda9c324;
     box-shadow: 0 6px 0 0 rgb(0 0 0 / 1%), 0 15px 32px 0 #eda9c324;
+    */
     border-radius: 20px;
 
 }
@@ -1064,7 +1070,8 @@ p {
 .card .card-header {
     padding: 1.5rem;
     border-bottom: none;
-    background-color: transparent
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card .card-body {
@@ -1252,7 +1259,8 @@ a {
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.85)
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
