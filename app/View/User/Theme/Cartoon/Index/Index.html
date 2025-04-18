@@ -664,7 +664,7 @@
         res.forEach(item => {
             if (item.handle === "#system") {
                 #{if $user}
-                $('.pay_type').append(' <a class="button-click" onclick="Trade(' + item.id + ')" style="line-height: 22px;color: #f5a6d9;font-weight: bold;"> <img src="' + item.icon + '" class="commodity-icon"> ' + item.name + '(#{sprintf("%.2f", $user.balance)})</a>');
+                $('.pay_type').append(' <a class="button-click" onclick="Trade(' + item.id + ')" style="line-height: 22px;font-weight: bold;"> <img src="' + item.icon + '" class="commodity-icon"> ' + item.name + '(#{sprintf("%.2f", $user.balance)})</a>');
                 #{/if}
             } else {
                 $('.pay_type').append(' <a class="button-click" onclick="Trade(' + item.id + ')" style="line-height: 22px;"> <img src="' + item.icon + '" class="commodity-icon"> ' + item.name + '</a>');
